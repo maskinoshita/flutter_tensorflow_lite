@@ -21,7 +21,7 @@ flutter:
     pluginClass: TensorflowLitePlugin
 
 environment:
-  sdk: ">=1.8.0 <2.0.0"
+  sdk: ">=1.8.0"
 
   # To add assets to your plugin package, add an assets section, like this:
   # assets:
