@@ -39,7 +39,7 @@ class Interpreter {
     return _channel.invokeMethod("Interpreter.run", [inputBytes, outputBytes]);
   }
   
-  Future<dynamic> run(ByteBuffer inputBytes, ByteBuffer outputBytes) async {
+  Future<dynamic> runAsRaw(ByteBuffer inputBytes, ByteBuffer outputBytes) async {
     return _channel.invokeMethod("Interpreter.run", [inputBytes, outputBytes]);
   }
 
