@@ -38,6 +38,10 @@ class Interpreter {
   Future<dynamic> run(Uint8List inputBytes, Uint8List outputBytes) async {
     return _channel.invokeMethod("Interpreter.run", [inputBytes, outputBytes]);
   }
+  
+  Future<dynamic> run(ByteBuffer inputBytes, ByteBuffer outputBytes) async {
+    return _channel.invokeMethod("Interpreter.run", [inputBytes, outputBytes]);
+  }
 
   Future<dynamic> close() {
     return _channel.invokeMethod("Interpreter.close");
